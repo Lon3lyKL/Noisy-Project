@@ -4,9 +4,9 @@
 #define NUM_LEDS 60
 #define DATA_PIN 8
 CRGB leds[NUM_LEDS];
-int checktime = 10;
+int checktime = 30;
 int brightness = 255;
-int myArray[checktime] ;
+int myArray[30] ;
 int timelight = 0;
 bool loud = false;
 char j,k;
