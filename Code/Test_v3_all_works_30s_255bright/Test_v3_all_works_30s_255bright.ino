@@ -12,7 +12,6 @@ bool loud = false;
 char j,k;
 long result;
 
-
 void setup() {
   delay(2000);
   FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS);
@@ -44,8 +43,6 @@ void loop() {
    else{
       myArray[timelight]=sensorValue;
     }
-
-
   
   if (loud == false){
     for(int whiteLed = 0; whiteLed < NUM_LEDS; whiteLed = whiteLed + 1) {
