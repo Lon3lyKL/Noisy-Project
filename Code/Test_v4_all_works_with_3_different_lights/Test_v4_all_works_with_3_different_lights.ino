@@ -8,7 +8,7 @@ int checktime = 30; // the amount of time to take the average from
 int brightness = 255; //brightness of the led
 int myArray[30] ; // creating an array to store the data
 int timelight = 0; // part of checking average 
-bool loud = false; //variable to store if the light should be red or white
+int loud = 1; //variable to store if the light should be red or white
 char j,k; 
 long result;
 
@@ -33,10 +33,13 @@ void loop() {
     result = result / checktime; //lower the result the louder it is
     Serial.println(result);
     if(result<600){ 
-      loud = true; // the students are noisy
+      loud = 3; // the students are noisy
       }
-    else{
-      loud = false; // the students are not noisy
+    else if((result>=600)and(result<=900)){
+      loud = 2; // the students are mildly noisy
+      }
+    else if(result>900){
+      loud = 1; // the students are not noisy
       }
     //Serial.println(loud);
    }
@@ -44,19 +47,24 @@ void loop() {
       myArray[timelight]=sensorValue; // adding the sensor value into the array
     }
   
-  if (loud == false){
+  if (loud == 1){
     for(int whiteLed = 0; whiteLed < NUM_LEDS; whiteLed = whiteLed + 1) { 
       leds[whiteLed] = CRGB::Green; // set rgb to green
       FastLED.show();
-   }
     }
-
-  else{
+  }
+  else if (loud == 2){
+    for(int whiteLed = 0; whiteLed < NUM_LEDS; whiteLed = whiteLed + 1) { 
+      leds[whiteLed] = CRGB::Orange; // set rgb to yellow
+      FastLED.show();
+    }
+  }
+  else if (loud == 3){
     for(int whiteLed = 0; whiteLed < NUM_LEDS; whiteLed = whiteLed + 1) {
       leds[whiteLed] = CRGB::Red; // set rgb to red
       FastLED.show();
-   }
     }
+  }
    delay(800); // delay to get exact 1 reading per second
    timelight ++; // incrementing the variable to count to average
 }
