@@ -21,11 +21,6 @@ void setup() {
   FastLED.setBrightness(brightness);
 }
 
-
-
-
-
-
 void loop() {
   int sensorValue = analogRead(sensorPin);
   //Serial.println(sensorValue);
