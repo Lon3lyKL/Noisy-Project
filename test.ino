@@ -1,0 +1,1 @@
+int checktime = 30;
