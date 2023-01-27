@@ -14,7 +14,7 @@ the voltage regulator on the mega is a D24V5F5, which outputs at 5v at a max of 
 
 Arduino & C++ extension can be added to vscode to use to write arduino
 arduino can be programmed through vscode and not need to use the arduino app
-
+guide of how to use it https://www.youtube.com/watch?v=WVZxK2MEbE4
 
 
 
