@@ -1,7 +1,7 @@
 #define sensorPin A0 // Analog input pin that the Sensor is attached to
 
 #include <FastLED.h>
-#define NUM_LEDS 60 // num of leds in the rgb strip
+#define NUM_LEDS 100 // num of leds in the rgb strip
 #define DATA_PIN 8 // data pin of the rgb strip
 CRGB leds[NUM_LEDS];
 int checktime = 30; // the amount of time to take the average from
