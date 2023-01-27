@@ -11,8 +11,16 @@ each Led Package draws 50mA of curent at 5v https://www.pololu.com/product/2547
 we have 100 leds which means 50mA*100=5000mA=5A
 the voltage regulator on the mega is a D24V5F5, which outputs at 5v at a max of 500mA https://forum.arduino.cc/t/replace-voltage-regulator-on-arduino-mega/402325/4 
 
-27/1/23: Things to do
 
+Arduino & C++ extension can be added to vscode to use to write arduino
+arduino can be programmed through vscode and not need to use the arduino app
+
+
+
+
+
+27/1/23: Things to do
+"use 741" -ms teo for speech pricessing
 Kar Lok:
 -   add a dc voltage regulator that can supply >3A current
     - we can use this 5v5A one https://www.amazon.sg/Pololu-Step-Down-Voltage-Regulator-D24V50F5/dp/B01M659ER2 
@@ -28,4 +36,5 @@ Jay:
 -   try to do mic v2 and make it work with a condensor mic
 
 
-"use 741" -ms teo for speech pricessing
+
+
