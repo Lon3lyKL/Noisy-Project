@@ -2,7 +2,10 @@
 This is a project by SSTudents for SSTudent to tell them to keep quiet during O Level Practical ;-;
 
 Resources:
-- https://arduino-tutorials.net/tutorial/drawing-sound-sensor-data-on-serial-plotter
+- https://arduino-tutorials.net/tutorial/drawing-sound-sensor-data-on-serial-plotter sound sensor
+- https://www.circuitbasics.com/how-to-use-a-real-time-clock-module-with-the-arduino/#:~:text=An%20RTC%20is%20a%20very,and%20Time%20on%20an%20Arduino. rtc
+- https://randomnerdtutorials.com/guide-for-microphone-sound-sensor-with-arduino/ sound sensor
+
 
 each Led Package draws 50mA of curent at 5v https://www.pololu.com/product/2547
 we have 100 leds which means 50mA*100=5000mA=5A
