@@ -18,11 +18,14 @@ Kar Lok:
     - we can use this 5v5A one https://www.amazon.sg/Pololu-Step-Down-Voltage-Regulator-D24V50F5/dp/B01M659ER2 
 -   make the Rtc + SD card work
     - sd card formatting should be [dd/mm/yy_hh.mm.ss_data]
--  change the mega to a mini(save space)
+-  change the mega to a mini(save space) / mega
 -  redesigning the lights
     - mounting of the leds
-    diffuser
-    distance to diffuser
+    - diffuser
+    - distance to diffuser
 
 Jay:
 -   try to do mic v2 and make it work with a condensor mic
+
+
+"use 741" -ms teo for speech pricessing
