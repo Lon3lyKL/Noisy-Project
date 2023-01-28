@@ -31,6 +31,7 @@ Kar Lok:
     - mounting of the leds
     - diffuser
     - distance to diffuser
+-  add a fan into the control box to provide cooling to the components cos it gna run for 24/7
 
 Jay:
 -   try to do mic v2 and make it work with a condensor mic
