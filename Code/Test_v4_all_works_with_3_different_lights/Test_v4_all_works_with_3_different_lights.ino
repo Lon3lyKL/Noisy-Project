@@ -1,5 +1,10 @@
 #define sensorPin A0 // Analog input pin that the Sensor is attached to
 
+#include <SPI.h>
+#include <SD.h>
+
+File Data_File;
+
 #include <FastLED.h>
 #define NUM_LEDS 60 // num of leds in the rgb strip
 #define DATA_PIN 8 // data pin of the rgb strip
@@ -18,6 +23,18 @@ void setup() {
   pinMode(sensorPin, INPUT); // setting input for microphone
   Serial.begin(9600);// initialize serial communications at 9600 bps:
   FastLED.setBrightness(brightness); // setting the brightness of the led
+
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+
+  Serial.print("Initializing SD card...");
+
+  if (!SD.begin(4)) {
+    Serial.println("initialization failed!");
+    while (1);
+  }
+  Serial.println("initialization done.");
 }
 
 void loop() {
@@ -32,6 +49,21 @@ void loop() {
     }
     result = result / checktime; //lower the result the louder it is
     Serial.println(result);
+    Data_File = SD.open("Data.txt", FILE_WRITE);
+
+    // if the file opened okay, write to it:
+    if (Data_File) {
+    Serial.print("Writing to test.txt...");
+    Data_File.print("Average Data is: "
+    Data_File.println(result);
+    // close the file:
+    Data_File.close();
+    Serial.println("done.");
+    }
+    else {
+    // if the file didn't open, print an error:
+    Serial.println("error opening test.txt");
+    }
     if(result<600){ 
       loud = 3; // the students are noisy
       }
@@ -65,6 +97,7 @@ void loop() {
       FastLED.show();
     }
   }
+  
    delay(800); // delay to get exact 1 reading per second
    timelight ++; // incrementing the variable to count to average
 }
