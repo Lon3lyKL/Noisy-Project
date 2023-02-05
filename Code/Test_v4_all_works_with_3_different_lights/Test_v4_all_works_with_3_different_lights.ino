@@ -3,10 +3,13 @@
 #include <SPI.h>
 #include <SD.h>
 
+#include <DS3231.h>
+DS3231  rtc(SDA, SCL);
+
 File Data_File;
 
 #include <FastLED.h>
-#define NUM_LEDS 60 // num of leds in the rgb strip
+#define NUM_LEDS 100 // num of leds in the rgb strip
 #define DATA_PIN 8 // data pin of the rgb strip
 CRGB leds[NUM_LEDS];
 int checktime = 10; // the amount of time to take the average from
@@ -23,6 +26,8 @@ void setup() {
   pinMode(sensorPin, INPUT); // setting input for microphone
   Serial.begin(9600);// initialize serial communications at 9600 bps:
   FastLED.setBrightness(brightness); // setting the brightness of the led
+
+  rtc.begin();
 
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
@@ -49,13 +54,40 @@ void loop() {
     }
     result = result / checktime; //lower the result the louder it is
     Serial.println(result);
+    // Send Day-of-Week
+    Serial.print(rtc.getDOWStr());
+    Serial.print(" ");
+  
+    // Send date
+    Serial.print(rtc.getDateStr());
+    Serial.print(" -- ");
+
+    // Send time
+    Serial.print(rtc.getTimeStr());
+    Serial.print("  ");
+  
+    // Wait one second before repeating
+    delay (1000);
     Data_File = SD.open("Data.txt", FILE_WRITE);
 
     // if the file opened okay, write to it:
     if (Data_File) {
-    Serial.print("Writing to test.txt...");
-    Data_File.print("Average Data is: "
+    Serial.print("Writing...");
+    Data_File.print("Average Data is: ");
     Data_File.println(result);
+    // Send Day-of-Week
+    Data_File.print(rtc.getDOWStr());
+    Data_File.print(" ");
+  
+    // Send date
+    Data_File.print(rtc.getDateStr());
+    Data_File.print(" -- ");
+
+    // Send time
+    Data_File.println(rtc.getTimeStr());
+  
+    // Wait one second before repeating
+    delay (1000);
     // close the file:
     Data_File.close();
     Serial.println("done.");
