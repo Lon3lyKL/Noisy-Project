@@ -37,5 +37,19 @@ Jay:
 -   try to do mic v2 and make it work with a condensor mic
 
 
+3/2/23: Update
+- we integrated the sd card and rtc
+- we set up the recording structure into the sd card
+- we set up the rtc to the exact time
+- we found a few osciliscopes dead
+- we found a few broken osciliscope probe
+- we made the amplifier circuit to work
+    - the mic we used is the wrong one
+            - the pickup pattern is completely wrong
+    - we used the lm741 ic to amplify it
 
+what we need to do: 
+- get a better mic
+- go back on wed to collect the data
+- pcb hehehawhaw
 
