@@ -18,6 +18,9 @@
             "includePath": [
                 "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino",
                 "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard",
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/src",
+                "/Applications/Arduino.app/Contents/Java/libraries/SD/src",
+                "/Users/klclone/Documents/Arduino/libraries/DS3231",
                 "/Users/klclone/Documents/Arduino/libraries/FastLED/src",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",

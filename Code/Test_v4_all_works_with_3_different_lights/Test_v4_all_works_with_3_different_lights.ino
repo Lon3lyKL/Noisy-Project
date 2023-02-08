@@ -53,7 +53,6 @@ void loop() {
       result = result + myArray[j];
     }
     result = result / checktime; //lower the result the louder it is
-    Serial.println(result);
     // Send Day-of-Week
     Serial.print(rtc.getDOWStr());
     Serial.print(" ");
@@ -65,16 +64,14 @@ void loop() {
     // Send time
     Serial.print(rtc.getTimeStr());
     Serial.print("  ");
-  
+    
+    Serial.println(result);
     // Wait one second before repeating
     delay (1000);
     Data_File = SD.open("Data.txt", FILE_WRITE);
 
     // if the file opened okay, write to it:
     if (Data_File) {
-    Serial.print("Writing...");
-    Data_File.print("Average Data is: ");
-    Data_File.println(result);
     // Send Day-of-Week
     Data_File.print(rtc.getDOWStr());
     Data_File.print(" ");
@@ -89,6 +86,9 @@ void loop() {
     // Wait one second before repeating
     delay (1000);
     // close the file:
+    Serial.print("Writing...");
+    Data_File.print("Average Data is: ");
+    Data_File.println(result);
     Data_File.close();
     Serial.println("done.");
     }
