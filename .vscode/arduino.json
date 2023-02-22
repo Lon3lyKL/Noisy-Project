@@ -1,4 +1,5 @@
 {
     "board": "arduino:avr:uno",
-    "sketch": "Code/Test_v4_all_works_with_3_different_lights/Test_v4_all_works_with_3_different_lights.ino"
+    "sketch": "Code/Test_v4_all_works_with_3_different_lights/Test_v4_all_works_with_3_different_lights.ino",
+    "programmer": "arduino:avrisp"
 }
