@@ -104,8 +104,8 @@ what we need to do:
     - at soome poitns the mic recoded 22 whcih was loud(we still have no clue what happened)
 - changed the sampling rate to every 30 seconds form every 10 seconds
 - changed the parameters for when the light will trigger for the dfferent volumes
-    - >900 == quiet
-    - >600 <900 == modertely noisy
+    - 900> == quiet
+    - 600> <900 == modertely noisy
     - <600 == very noisy
 - tested it with some of us talking and got it to moderate noise
 - realised the rtc was configured to be one day ahead(small problem, the date wont be used)
