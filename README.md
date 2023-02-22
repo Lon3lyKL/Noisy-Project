@@ -53,3 +53,41 @@ what we need to do:
 - go back on wed to collect the data
 - pcb hehehawhaw
 
+
+
+8/2/23: Update
+- the data on monday was ok with us being able to see the points where students came down for thier breaks and there was noise recorded
+- the tuesday data was weird it got all flipped and we have no clue what happened
+- first time collecting the data it was good
+- the sd card and the rtc works
+- the google sheet was created with the correct formuls to create the graph to visualise the data
+
+
+
+23/2/23: Update
+- we got the data from 8-10 feb and it was ok, sensitivity of the mic has to be changed
+    - at soome poitns the mic recoded 22 whcih was loud(we still have no clue what happened)
+- changed the sampling rate to every 30 seconds form every 10 seconds
+- changed the parameters for when the light will trigger for the dfferent volumes
+    - >900 == quiet
+    - >600 <900 == modertely noisy
+    - <600 == very noisy
+- tested it with some of us talking and got it to moderate noise
+- realised the rtc was configured to be one day ahead(small problem, the date wont be used)
+- planning to leave it until 24 feb(fri) even overnicet to collect the data
+- fine tuning the number to be able to record a video of ti for the principal
+- shoudl be the last time we touched the code, nothing else needs to be changed
+- 30s allows more data to be averaged out with the anomolies measured from electrical noise to be removed
+- it will change the light less often thus the students will not stand there to watch it
+- the green light on top of the mic can be used to check if the calibration of the gain is corrected
+
+things done: 
+- acrylic top pannel was created
+- tuned the mic to the correct sensitivity
+
+things to improve: 
+- add proper connectors for the rgb
+- test the mic amps: jay
+- test the rf moduled: karlok
+- redesign led mount: karlok
+- redesign led mounting system: karlok (jay has some comments about this)
