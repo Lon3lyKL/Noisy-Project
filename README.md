@@ -80,6 +80,9 @@ what we need to do:
 - 30s allows more data to be averaged out with the anomolies measured from electrical noise to be removed
 - it will change the light less often thus the students will not stand there to watch it
 - the green light on top of the mic can be used to check if the calibration of the gain is corrected
+- changed the name of the project to "Noisy Student Project" from "Noisy Boi Project" to use more gender neutral terms
+- (maybe we changed it before today im not sure) but ms teo was made aware of it today
+- heard from other students it works sometimes when they tried to use it
 
 things done: 
 - acrylic top pannel was created
@@ -89,5 +92,5 @@ things to improve:
 - add proper connectors for the rgb
 - test the mic amps: jay
 - test the rf moduled: karlok
-- redesign led mount: karlok
+- redesign led case: karlok
 - redesign led mounting system: karlok (jay has some comments about this)
