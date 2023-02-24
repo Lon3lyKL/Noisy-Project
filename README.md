@@ -96,6 +96,10 @@ things to improve:
 - sound sensor to be placed in science lab to record and corelate data
 - v2 will have design improvements
 - this mic is probably good enough and we wont need to get a different long range mic
+- there was an error in the google sheets
+    - taking the last 3 numbers willl miss out the times when the number is at 1020 and take it as 20
+    - making it show up as anamoly
+- changed to take the last 4 numbers
 
 things to improve: 
 - see 22feb comments
