@@ -95,6 +95,7 @@ things to improve:
 - sensor will be placed at corridor between canteen and science lab
 - sound sensor to be placed in science lab to record and corelate data
 - v2 will have design improvements
+- this mic is probably good enough and we wont need to get a different long range mic
 
 things to improve: 
 - see 22feb comments
