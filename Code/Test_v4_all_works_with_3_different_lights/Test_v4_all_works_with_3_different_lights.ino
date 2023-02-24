@@ -96,13 +96,13 @@ void loop() {
     // if the file didn't open, print an error:
     Serial.println("error opening test.txt");
     }
-    if(result<600){ 
+    if(result<550){ 
       loud = 3; // the students are noisy
       }
-    else if((result>=600)and(result<=900)){
+    else if((result>=550)and(result<=800)){
       loud = 2; // the students are mildly noisy
       }
-    else if(result>900){
+    else if(result>800){
       loud = 1; // the students are not noisy
       }
     //Serial.println(loud);
