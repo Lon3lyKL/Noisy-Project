@@ -19,7 +19,9 @@ Resources:
 - https://spreadsheetpoint.com/how-to-insert-multiple-columns-in-google-sheets/#:~:text=If%20you%20want%20to%20insert%20a%20really%20large%20number%20of,of%2026%20at%20a%20time.&text=This%20happens%20because%2C%20by%20default,Sheets%20only%20displays%2026%20columns. add more columns (Cmd+A then insert columns)
 - https://www.google.com/search?q=long+range+microphone&sxsrf=AJOqlzU-5-aMhFA42eUlng8by9MDt4nGLQ:1677038224791&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjD_6adnqj9AhW20nMBHdwJC6UQ_AUoAnoECAEQBA&biw=3840&bih=1954&dpr=1 long range mic search
 - https://sg.rs-online.com/web/p/industrial-circular-connectors/1115761?cm_mmc=SG-PLA-DS3A-_-google-_-PLA_SG_EN_Connectors_Whoop-_-(SG:Whoop!)+Industrial+Circular+Connectors-_-1115761&matchtype=&aud-828197004210:pla-337272310299&gclid=CjwKCAiAr4GgBhBFEiwAgwORrZZUS9XTWRJ9E48UJRqFLdvWVaafYJfovye7x4pv-s9hSqEJaLw5TxoC_CEQAvD_BwE&gclsrc=aw.ds 3 pin connecter used for rgb and mic
-
+- https://lastminuteengineers.com/ds3231-rtc-arduino-tutorial/ another rtc 
+- https://jaazz.me/2014/03/11/how-to-wire-an-unbalanced-microphone-to-a-balanced-xlr-input/ xlr input
+- https://www.terralec.co.uk/CableConnectors.aspx xlr input
 
 Others:
 - https://www.convert-measurement-units.com/conversion-calculator.php?type=kapazitaet  unit conversion calculator to save time LMAO
