@@ -22,7 +22,8 @@ long result;
 
 void setup() {
   delay(2000); // delay for initialising devices
-  FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS); // initilise argb led
+  //FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS);
+  FastLED.addLeds<WS2811, DATA_PIN, RGB>(leds, NUM_LEDS); // initilise argb led
   pinMode(sensorPin, INPUT); // setting input for microphone
   Serial.begin(9600);// initialize serial communications at 9600 bps:
   FastLED.setBrightness(brightness); // setting the brightness of the led
